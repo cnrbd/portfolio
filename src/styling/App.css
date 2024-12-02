@@ -1,0 +1,117 @@
+.canvas-border {
+    border: 1px solid gray;
+}
+
+.page-padding {
+    padding: clamp(2px, 7vw, 40px);
+}
+
+.exit-wrapper {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+    margin-left: clamp(2px, 7vw, 40px);
+    white-space: nowrap;
+}
+
+.exit-styling {
+    display: inline-block;
+    color: white;
+    font-size: clamp(2px, 4vw, 26px);
+    font-family: 'CutiveMono';
+    overflow: hidden;
+    -webkit-transition: width 0.5s ease-in-out;
+    -moz-transition: width 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    transition: 200ms;
+}
+
+.exit-styling:hover {
+    filter: brightness(0.5);
+}
+
+.tabs-styling {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    user-select: none;
+    overflow: hidden;
+    -webkit-transition: width 0.5s ease-in-out;
+    -moz-transition: width 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+}
+
+.header-styling {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: white;
+    font-family: 'CutiveMono';
+    padding-left: clamp(1px, 2vw, 18px);
+    padding-right: clamp(1px, 2vw, 18px);
+    font-size: clamp(2px, 4vw, 54px);
+    user-select: none;
+}
+
+.tabs-button-styling {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    font-family: 'CutiveMono';
+    margin-left: clamp(1px, 2vw, 18px);
+    font-size: clamp(2px, 4vw, 36px);
+    transition: 200ms;
+    user-select: none;
+}
+
+.tabs-button-styling:hover {
+    filter: brightness(0.5);
+}
+
+.background-button-selection {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: clamp(2px, 7vw, 40px);
+    height: calc(100% - clamp(2px, 7vw, 40px) * 2);
+    margin-top: clamp(2px, 7vw, 40px);
+    z-index: 100;
+}
+
+.background-button {
+    display: flex;
+    border: 1px solid white;
+    width: clamp(2px, 3vw, 20px);
+    -webkit-aspect-ratio: 1 / 1;
+    aspect-ratio: 1/1;
+    margin: clamp(2px, 1vw, 8px);
+    justify-content: center;
+    align-items: center;
+}
+
+.background-button-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'CutiveMono';
+    font-size: clamp(2px, 3vw, 16px);
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+@media (min-width: 1280px) {
+    .header-styling {
+        white-space: nowrap;
+    }
+}

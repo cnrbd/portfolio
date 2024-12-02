@@ -1,0 +1,206 @@
+.tab-content-styling {
+    position: relative;
+    display: flex;
+    z-index: -1;
+    height: 100%;
+    padding: 3%;
+    overflow-y: scroll;
+    -webkit-transition: width 0.5s ease-in-out;
+    -moz-transition: width 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+}
+
+#about-container {
+    position: relative;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    padding: 6%;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, 0.7);
+    -webkit-transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+    transition-behavior: allow-discrete;
+}
+
+#about-header {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    color: white;
+    font-family: 'CutiveMono';
+    font-size: clamp(2px, 6vw, 32px);
+    border-bottom: 1px solid white;
+    margin-bottom: 1.5vw;
+    overflow: hidden;
+    -webkit-transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+    transition-behavior: allow-discrete;
+}
+
+#about-body {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: clamp(2px, 3vw, 17px);
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+#projects-content {
+    position: relative;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    padding: 6%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    -webkit-transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+    transition-behavior: allow-discrete;
+}
+
+
+#projects-header {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    font-family: 'CutiveMono';
+    font-size: clamp(2px, 6vw, 32px);
+    border-bottom: 1px solid white;
+    overflow: hidden;
+    -webkit-transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+    transition-behavior: allow-discrete;
+}
+
+#project-scroller {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 3%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-top: 1rem;
+}
+
+.project-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    padding: 2%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.project-title {
+    display: flex;
+    font-weight: bold;
+    font-size: clamp(2px, 5vw, 24px);
+    margin-right: 2%;
+}
+
+.project-image {
+    display: flex;
+    width: 80%;
+    align-self: center;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+.github-button {
+    display: flex;
+    width: clamp(2px, 8vw, 30px);
+}
+
+.github-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: invert();
+}
+
+@media (min-width: 768px) {
+    #project-scroller {
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .project-card {
+        display: flex;
+        flex-shrink: 0;
+        width: 40%;
+        height: 100%;
+        border: 1px solid white;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+
+#contact-container {
+    position: relative;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    padding: 6%;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, 0.7);
+    -webkit-transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+    transition-behavior: allow-discrete;
+}
+
+#contact-header {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    color: white;
+    font-family: 'CutiveMono';
+    font-size: clamp(2px, 6vw, 32px);
+    border-bottom: 1px solid white;
+    margin-bottom: 1.5vw;
+    overflow: hidden;
+    -webkit-transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+    transition-behavior: allow-discrete;
+}
+
+#contact-body {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: clamp(2px, 3vw, 17px);
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+

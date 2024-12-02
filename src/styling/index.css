@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  background-color: #131313;
+  /* cursor: none; */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "CutiveMono";
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/CutiveMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Antipasto";
+  font-style: normal;
+  src: url('/fonts/Antipasto.ttf') format('truetype');
+}
