@@ -28,7 +28,7 @@ export const ProjectTemplate: React.FC<Template> = ({ projectName }) => {
           "Augmented LLM-Powered Data Analytics for Michelin Mobility Intelligence";
         github = "https://github.com/Lycoriste/RBXWebserver";
         description =
-          "This project explores the use of Reinforcement Learning (RL) to create more human-like and intelligent NPC (Non-Playable Character) behaviors in Roblox games. By training NPCs to interact dynamically with their environment, the AI learns optimal decision-making strategies based on feedback from its actions.\n\nThrough RL, NPCs in the game are able to observe their surroundings, adapt to player behaviors, and respond in increasingly sophisticated ways, making each interaction feel more natural and engaging. The NPCs are trained to solve in-game challenges, navigate complex environments, and make decisions that mimic human-like behavior, such as learning from past experiences and adjusting strategies based on the current situation. Currently, a backend is setup via FastAPI to allows communication between Roblox Studio and PyTorch + AWS RDS PostgreSQL Database. Reinforcement learning model and environment + agent design is ongoing.";
+          "This was my Fall 2024 AI studio project for BreakThroughTechAI@MIT where I was grouped with Michelin Mobility Intelligence. I ";
         imgURL = "/img/projectimg/rbxwebserverproject.png";
         break;
       }
