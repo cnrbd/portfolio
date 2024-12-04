@@ -26,20 +26,21 @@ export const ProjectTemplate: React.FC<Template> = ({ projectName }) => {
       case "michelin-project": {
         title =
           "Augmented LLM-Powered Data Analytics for Michelin Mobility Intelligence";
-        github = "https://github.com/Lycoriste/RBXWebserver";
+        github = "https://github.com/mtong1/michelin_group_16";
         description =
-          "This was my Fall 2024 AI studio project for BreakThroughTechAI@MIT where I was grouped with Michelin Mobility Intelligence. I ";
-        imgURL = "/img/projectimg/rbxwebserverproject.png";
+          "This was my Fall 2024 AI studio project for BreakThroughTechAI@MIT where I was grouped with Michelin Mobility Intelligence. My group made a Streamlit app powered by LangChain's Ollama that utitlizes Llama 3.2 where users can upload CSV file(s) and make queries. Our Streamlit app requires users to upload CSV file(s), provide context regarding them, and providing their question before prompting the Llama LLM. The purpose of this project was to be an internal tool for Michelin.\n\n Key features of the app include metadata extraction from uploaded CSV files and a user-friendly interface that guides users to input relevant context and queries. To ensure precise and relevant responses, our team implemented advanced prompt engineering techniques. This process involved crafting an optimal prompt structure that combined extracted metadata, user-provided context, and questions, while avoiding the rigid output formats typical of LangChain responses. \n\n The core functionality was built using LangChain’s Pandas DataFrame Agent, enabling the app to perform seamless Pandas queries on the data to retrieve accurate answers. This integration allowed the app to handle complex queries and dynamic dataframes effectively, ensuring high utility for users working with diverse datasets. Through this project, we successfully leveraged advanced AI capabilities to create a robust and interactive tool for data exploration, showcasing the potential of LLMs in enhancing decision-making processes.";
+        imgURL = "";
+        deployment = "https://github.com/mtong1/michelin_group_16";
         break;
       }
       case "us-census-project": {
         title =
           "Income Prediction Engine: Regression Modeling with Census Data";
-        github = "https://github.com/Lycoriste/Portfolio";
+        github = "https://github.com/cnrbd/BreakThrougTechAI-MIT_Lab5";
         description =
-          "My first website was actually a portfolio website (as seen above). I  challenged myself to learn Three.js/React-Three-Fiber because of Keita Yamada's portfolio website (check him out here: https://p5aholic.me), and I thought maybe I could try something like that. This is my second iteration and upgraded version of the original. It is still buggy and I am currently still optimizing the site so I apologize for any inconvenience.\n\n3D models used:\n'Cyberpunk Apartment' (https://skfb.ly/oz7SP) by Jiaxing is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).\n\n'Steins;Gate - Future Gadget Lab'(https://skfb.ly/6Z9vX) by Theory.OAD is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).";
-        imgURL = "/img/projectimg/oldportfolio.png";
-        deployment = "www.lycoriste.me";
+          "This project focused on building a binary classification model to predict whether an individual's annual income exceeds $50K based on attributes from the 1994 U.S. Census dataset. Data cleaning was a crucial first step, involving the removal of irrelevant features like fnlwgt (due to its limited predictive utility) and native-country (to avoid potential biases). Missing values in numerical columns, such as age and hours-per-week, were imputed with their respective means, while rows with missing categorical values in features like workclass or occupation were dropped to maintain data consistency. To prepare categorical features for machine learning models, one-hot encoding was employed, ensuring all data was numeric and suitable for the modeling process.\n\n A Random Forest Classifier was selected as the predictive model due to its robustness and ability to handle complex datasets with mixed feature types. Hyperparameter tuning was performed using Grid Search to optimize model performance. Key hyperparameters, such as max_depth (to control the tree depth) and n_estimators (the number of trees in the forest), were systematically tested to identify the best combination for reducing overfitting and improving accuracy. The model's performance was evaluated using metrics like accuracy, ROC-AUC, and a confusion matrix, highlighting its effectiveness in distinguishing between income classes. This methodical approach demonstrates the importance of both rigorous data preparation and careful hyperparameter tuning in building ethical and reliable machine learning models.";
+        imgURL = "";
+        deployment = "https://github.com/cnrbd/BreakThrougTechAI-MIT_Lab5";
         break;
       }
       default: {
