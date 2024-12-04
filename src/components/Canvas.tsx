@@ -227,10 +227,7 @@ export const Background: React.FC<BackgroundProps> = React.memo(
       const { scene, camera, gl } = useThree();
       let cameraTarget = new THREE.Vector3(0.345, 1.8, -10);
       const cameraLocations: { [key: string]: THREE.Vector3[] } = {
-        Home: [
-          new THREE.Vector3(-20, 20, 20),
-          new THREE.Vector3(0.345, -5, -10),
-        ],
+        Home: [new THREE.Vector3(-5, 20, 5), new THREE.Vector3(0, 0, 0)],
         About: [
           new THREE.Vector3(0.05, 1.8, -0.5),
           new THREE.Vector3(1, 1.8, -10),
